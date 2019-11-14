@@ -1,0 +1,72 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{lib/report-template}
+\usepackage[all]{background}
+\usepackage{lipsum}
+
+\SetBgContents{Preliminary version/2.0}% Set contents
+\SetBgPosition{-0.5cm,-5.0cm}% Select location
+\SetBgOpacity{1.0}% Select opacity
+\SetBgAngle{90.0}% Select rotation of logo
+\SetBgScale{2.0}% Select scale factor of logo
+
+
+%Line spacing
+\renewcommand{\baselinestretch}{1.5}
+
+\title{projeto ATLAS}
+
+\date{August 2019}
+
+
+\begin{document}
+
+\include{lib/frontpage}
+\include{lib/facepage}
+\include{parts/resumo}
+\include{parts/abstract}
+
+\tableofcontents
+
+\include{parts/introducao}
+\include{parts/resultados_do_projeto}
+\include{parts/desafios_cientificos_tecnologicos}
+\include{parts/cronograma}
+\include{parts/disseminacao}
+%\include{parts/outros_apoios}
+
+\begin{thebibliography}{9}
+
+\bibitem{tdr} ATLAS collaboration, Technical Proposal: A High-Granularity Timing Detector for the ATLAS Phase-II Upgrade, CERN-LHCC-2018-023.
+
+\bibitem{JIN_LGAD} N. Moffat. et al. JINST. 13, (2018) C03014.
+
+\bibitem{NIMA_LGAD} M. Carulla. et al. Nucl. Instrum. Meth. A 924, (2019) 373. 
+
+\bibitem{ALICEUP} ALICE Collaboration, J. Phys. G: Nucl. Part. Phys. 41 (2014) 087001.
+
+\bibitem{ref1} B. A. et al. (ALICE Collaboration), Technical design report for the upgrade of the alice time projection chamber, CERN-LHCC-2013-020
+A886 (2013), http://cds.cern.ch/record/1622286.
+
+
+\bibitem{tpcNIM} M.M. Aggarwal, et al., Nucl. Instrum. Meth. A 903, (2018) 215–223. 
+
+\bibitem{discharge_paper} A. Deisting, et al., Nucl. Instrum. Meth. A 937, (2019) 168–180.
+
+\bibitem{COMSOL} https://www.comsol.com/comsol-multiphysics
+
+\bibitem{THGEM} H. Natal da Luz, et al., EPJ Web of Conferences 174, (2018) 01012.
+
+\bibitem{NIM} G. G. A. de Souza and  H. Natal da Luz, Nucl. Inst. Meth. A 937, (2019) 141–147.
+
+\bibitem{xray} G.G.A. de Souza and H.N. da Luz, X-Ray Spectrometry 48, 5 (2018).
+
+\bibitem{sirius} https://www.lnls.cnpem.br/sirius/livro-projeto-sirius/
+
+%\bibitem{production_protocol} http://indico.cern.ch/event/645829/
+
+
+\end{thebibliography}
+
+
+\end{document}
