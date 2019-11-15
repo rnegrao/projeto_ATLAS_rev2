@@ -1,6 +1,14 @@
+% Conteudo do capitulo
+%1- Razoes fisicas para se ter o ATLAS UPGRADE 
+%2- Porque a melhor escolha para o upgrade e o LGAD
+%3- Importacia cientifica do LGAD
+%4- Introducao ao LGAD
+%5- Proposta do projeto
+%6- Alguns detalhes sobre o escopo do projeto
+%7- Importancia para o grupo 
 \chapter{Introdução}
 
-% 4 - IMPORTANCIA PARA O ATLAS UPGRADE
+% 1 - Razoes físicas para se ter o ATLAS UPGRADE 
 Para o experimento ATLAS, o desafio experimental é reconstruir partículas na região de rapidez frontal, produzidas na interação inicial de modo a associá-las corretamente com o vértice onde foram originadas, em um regime de altas taxas de colisão. Para solucionar esse desafio, um novo sistema de detecção frontal, denominado HGTD ({\it High Granularity Timing Detector}), está sendo desenvolvido - com base nos sensores LGAD - para fornecer uma medida precisa de tempo, com o objetivo de diminuir os efeitos do {\it pile-up} dos eventos. 
 
 De modo geral, a capacidade de associar as trajetórias ao vértice primário depende da precisão na determinação do parâmetro de impacto longitudinal. Enquanto que para trajetórias centrais com pseudo-rapidez no intervalo $\eta<1.5$, o parâmetro de impacto longitudinal é pequeno e determinado com grande precisão, para trajetórias frontais com $\eta>2.5$ o parâmetro de impacto cresce rapidamente atingindo valores da ordem de milímetros \cite{tdr}. Esse é um comportamento perfeitamente explicado pelo fato delas tornarem se mais colineares com a linha do feixe, o que associado à segmentação do detector dificulta a extrapolação das trajetórias para a posição do vértice da colisão, resultando em grandes valores obtidos para o parâmetro de impacto longitudinal.
@@ -9,7 +17,6 @@ Desse modo, devido à baixa resolução presente na medida da proximidade longit
 
 Por conseguinte, com o aumento significativo da eficiência na medida de partículas frontais através do uso do HGTD será possível medir com precisão a luminosidade do feixe, que é uma medida crítica para a determinação da seção de choque de produção de partículas em diversas analises físicas, além de  permitir a reconstrução de jatos de partículas com grande precisão. A melhoria na capacidade de reconstrução de jatos - que será obtida com o HGTD - aumentará a sensibilidade do experimento, permitindo explorar observáveis antes não explorados devido aos limites experimentais.
 
-%4.1 porque esoolheram o lgad
 \begin{figure} 
     \centering
     \includegraphics[width=12.0cm]{assets/timeresolution_vs_gain.png}
@@ -17,6 +24,7 @@ Por conseguinte, com o aumento significativo da eficiência na medida de partíc
     \label{timeresolution}
 \end{figure}
 
+%2-  Porque a melhor escolha para o upgrade e o LGAD
 Neste ponto cabe destacar que os sensores LGAD foram adotados como base tecnológica para a construção do HGTD por apresentarem excelentes características com respeito ao compromisso entre ganho e resolução temporal. A Fig. \ref{timeresolution} mostra quatro conjuntos de dados medidos - utilizando os primeiros protótipos do sensor irradiados em  diferentes valores de fluência de nêutrons - onde é possível observar a dependência da resolução em tempo em função de seu ganho. De acordo com os dados, eles demonstram que é possível atingir resolução em tempo menores que 30ps com valores moderados de ganho.    
 Por conseguinte, como ilustra a Fig. \ref{hgtd}, o HGTD foi concebido para ser instalado na região frontal do experimento, em ambos os lados a uma distancia de $3.5m$ do ponto de interação do feixe, região a qual está localizada após o volume do ATLAS {\it Inner Tracker} (ITk) \cite{tdr}. 
 
@@ -27,12 +35,12 @@ Por conseguinte, como ilustra a Fig. \ref{hgtd}, o HGTD foi concebido para ser i
     \label{hgtd}
 \end{figure}
 
-% 1 - IMPORTANCIA DO PROJETO
-Detectores semicondutores de resposta rápida do tipo LGAD ({\it Low Gain Avalanche Detector}) é uma tecnologia introduzida recentemente no escopo do desenvolvimento de sensores semicondutores \cite{JIN_LGAD,NIMA_LGAD}, cuja capacidade de produzir sinais em intervalos de tempo muito curtos possibilita a medida de eventos produzidos em colisões p-p nos experimentos de física de altas energias em intervalos de tempo da ordem de pico segundos. 
+% 3- Importância cientifica do LGAD
+Detectores semicondutores de resposta rápida do tipo LGAD ({\it Low Gain Avalanche Detector}) é uma tecnologia introduzida recentemente no escopo do desenvolvimento de sensores semicondutores \cite{JIN_LGAD,NIMA_LGAD}, cuja capacidade de produzir sinais em intervalos de tempo muito curtos possibilita a medida de eventos produzidos em colisões próton-próton nos experimentos de física de altas energias em intervalos de tempo da ordem de pico segundos. 
 
 Além da resposta rápida à incidência de radiação, esse tipo de sensor possui ganho intrínseco devido ao perfil de dopagem empregado no material semicondutor, o que torna possível amplificar o sinal produzido e dessa forma operá-lo em modo de avalanche de carga \cite{JIN_LGAD,NIMA_LGAD}. Essas características demonstram a complexidade e a importância dessa tecnologia para o desenvolvimento da próxima geração de sensores semicondutores para aplicações que requerem altas taxas de contagem.
 
-% 2 - PROPOSTA DO PROJETO
+% 4- Introdução ao LGAD
 Os primeiros sensores baseados em LGAD foram desenvolvidos no Centro Nacional de Microeletrônica (CNM) em Barcelona e posteriormente pela colaboração RD50-CERN \cite{tdr,JIN_LGAD,NIMA_LGAD}, a qual é uma colaboração localizada no CERN que visa desenvolver detectores semicondutores para aplicações com feixes de alta intensidade.% Além disso, o RD50 promove o surgimento de novas aplicações e inovações através do desenvolvimento de ferramentas e da consolidação do conhecimento e dos fenômenos físicos relacionados com sensores semicondutores. 
 
 Em maiores detalhes, LGAD são sensores semicondutores planos com ganho intrínseco como ilustra a Fig. \ref{lgad}. O ganho do sensor é determinado pela quantidade de dopante implantado na matriz de silício formando a camada de multiplicação. Como mostra a Fig. \ref{lgad}, sua arquitetura é composta de uma camada de material semicondutor do tipo n sobre uma camada do tipo p, com a adição de uma camada altamente dopada do tipo p localizada entre a junção n-p, cuja função é criar um alto campo elétrico responsável por produzir a avalanche das cargas e amplificar o sinal elétrico. Dessa forma, quando uma partícula atravessa a região sensível do detector  elétrons e lacunas são criados produzindo uma corrente inicial. Os elétrons ao atingirem a região de amplificação produzem novos pares elétron lacuna sendo desse modo multiplicados em um processo de avalanche. Essa corrente, de 10 a 30 vezes maior do que a produzida em um diodo padrão, é o principal mecanismo responsável pela excelente resolução em tempo desses sensores. 
@@ -44,12 +52,13 @@ Em maiores detalhes, LGAD são sensores semicondutores planos com ganho intríns
     \label{lgad}
 \end{figure}
 
-% 3 - BREVE PROPOSTA DO PROJETO
+% 5 - PROPOSTA DO PROJETO
 À vista disso, um dos propósitos deste projeto é desenvolver técnicas e metodologias necessárias para a caracterização física de sensores semicondutores do tipo LGAD. Neste escopo a colaboração com o experimento ATLAS no CERN será fundamental pois irá servir de ponte para a troca de conhecimento e experiência permitindo introduzir esse tipo de tecnologia no IFUSP.
 
 %-------------------- 4.1 colocar algo mais com respeito ao btagging e reconstrucao de jatos 
 % para a realizacao deste detector sera empregado sensore LGAD....
-% 5 - DETALHE DA TIMELINE OBJETIVO
+
+% 6- Alguns detalhes sobre o escopo do projeto
 Com isso em mente, em maiores detalhes, neste projeto de pesquisa é proposto o desenvolvimento de atividades focadas na pesquisa e desenvolvimento dos sensores semicondutores do tipo LGAD com o objetivo de optimizar sua característica para utilização no HGTD do experimento ATLAS. A consolidação desse tipo de sensores oferece uma grande desafio em termos de pesquisa e desenvolvimento na área de sensores semicondutores, com potencial de aplicação em diversas áreas da física e tecnologia em geral. 
 
 O projeto será composto de várias etapas. Inicialmente pretende-se consolidar as técnicas necessárias para a caracterização dos sensores. Neste processo o pesquisador responsável e colaboradores irão estabelecer o métodos experimentais para a caracterização das propriedades físicas dos sensores. Nesta estágio, o pesquisador será responsável por montar e certificar os arranjos experimentais, desenhar e construir as parte necessárias para os mesmos, além de automatizar o processo de tomada de dados. Por fim, a comparação direta com resultados obtidos em outros centros de pesquisa dentro da colaboração ATLAS será feita para garantir a qualidade dos resultados obtidos e acelerar a consolidação dessa etapa.  
@@ -64,5 +73,6 @@ Uma vez optimizados, a solução definida será produzida em larga escala, e nes
 
 % 6 - APLICACOES PARA A INDUSTRIA
 %Ainda no ambito nacional, pretende se fazer um esforço ...
-% 7 - PONTOS POSITIVOS DO GRUPO
+
+% 7 - Importancia para o grupo
 Por fim, é importante destacar que a implantação dessa linha de pesquisa no HEPIC será de extrema importância para projetos futuros envolvendo sensores semicondutores. Atualmente o grupo conta com excelentes ferramentas na areá de instrumentação para física nuclear e de partículas reconhecida internacionalmente, e adquirida por meio da execução de projetos em colaborações internacionais, como por exemplo o chip SAMPA focada na tecnologia de detectores gasosos \cite{ref1}. Isso somado à experiência do pesquisador responsável adquirida na execução de pesquisa e desenvolvimento no âmbito do projeto de upgrade do TPC do ALICE \cite{tpcNIM,discharge_paper}, tornará possível a transferência total de tecnologia relacionada com sensores semicondutores de alta performance para o HEPIC, bem como a geração de novas tecnologias e aplicações que poderão estabelecer o grupo como um protagonista internacional.
